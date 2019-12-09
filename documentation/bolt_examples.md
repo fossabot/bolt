@@ -140,7 +140,7 @@ In this example, you:
 - Download module content from the Puppet Forge.
 - Write a Bolt plan to apply Puppet code and orchestrate the deployment of a package resource using the Chocolatey provider.
 
-### 1. Build a project-specific configuration using a Bolt project directory Bolt runs in the context of a project directory. This directory contains all of the configuration, code, and data loaded by Bolt.
+### 1. Build a project-specific configuration using a Bolt project directory because Bolt runs in the context of a project directory. This directory contains all of the configuration, code, and data loaded by Bolt.
 
 1. Create a directory called `puppet_choco_tap` and add a bolt.yaml file. Whenever you run Bolt inside this project directory, it will load the code and configuration.
 
@@ -335,4 +335,3 @@ Ran on 2 nodes in 3.15 seconds
 That’s it! In this one plan, you have both installed Chocolatey and deployed the package to two nodes. You can do the same thing on any number of nodes by editing the inventory file. Note that Chocolatey will remain installed on your machine.
 
 After you have installed your package, with the help of Bolt, you can use Chocolatey to automate all of the package management tasks for upgrades or uninstalls. You can use Puppet Enterprise to guarantee state across all of your nodes and handle configuration drift — and make sure no one accidentally uninstalls the package that you just installed.
-
